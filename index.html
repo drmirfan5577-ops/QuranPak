@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>قرآن پاک — تلاوت · اردو ترجمہ · تفاسیر · بیان القرآن</title>
-    <meta name="description" content="قرآن پاک کی تلاوت، اردو آڈیو ترجمہ، متعدد تفاسیر اور بیان القرآن — ڈاکٹر اسرار احمدؒ" />
-    <meta name="keywords" content="Quran, قرآن پاک, Urdu Translation, Tafseer, Bayan ul Quran, Dr Israr Ahmed, Islamic App" />
+    <title>ÙØ±Ø¢Ù Ù¾Ø§Ú© â ØªÙØ§ÙØª Â· Ø§Ø±Ø¯Ù ØªØ±Ø¬ÙÛ Â· ØªÙØ§Ø³ÛØ± Â· Ø¨ÛØ§Ù Ø§ÙÙØ±Ø¢Ù</title>
+    <meta name="description" content="ÙØ±Ø¢Ù Ù¾Ø§Ú© Ú©Û ØªÙØ§ÙØªØ Ø§Ø±Ø¯Ù Ø¢ÚÛÙ ØªØ±Ø¬ÙÛØ ÙØªØ¹Ø¯Ø¯ ØªÙØ§Ø³ÛØ± Ø§ÙØ± Ø¨ÛØ§Ù Ø§ÙÙØ±Ø¢Ù â ÚØ§Ú©Ù¹Ø± Ø§Ø³Ø±Ø§Ø± Ø§Ø­ÙØ¯Ø" />
+    <meta name="keywords" content="Quran, ÙØ±Ø¢Ù Ù¾Ø§Ú©, Urdu Translation, Tafseer, Bayan ul Quran, Dr Israr Ahmed, Islamic App" />
     <meta name="author" content="OnSpace" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="قرآن پاک — تلاوت · اردو ترجمہ · تفاسیر · بیان القرآن" />
-    <meta property="og:description" content="قرآن پاک کی تلاوت، اردو آڈیو ترجمہ، متعدد تفاسیر اور بیان القرآن" />
+    <meta property="og:title" content="ÙØ±Ø¢Ù Ù¾Ø§Ú© â ØªÙØ§ÙØª Â· Ø§Ø±Ø¯Ù ØªØ±Ø¬ÙÛ Â· ØªÙØ§Ø³ÛØ± Â· Ø¨ÛØ§Ù Ø§ÙÙØ±Ø¢Ù" />
+    <meta property="og:description" content="ÙØ±Ø¢Ù Ù¾Ø§Ú© Ú©Û ØªÙØ§ÙØªØ Ø§Ø±Ø¯Ù Ø¢ÚÛÙ ØªØ±Ø¬ÙÛØ ÙØªØ¹Ø¯Ø¯ ØªÙØ§Ø³ÛØ± Ø§ÙØ± Ø¨ÛØ§Ù Ø§ÙÙØ±Ø¢Ù" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,5 +18,54 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <script>/* DeployHub badge clearance */
+(function(){
+  if(window.__nhBadgeSafe)return;window.__nhBadgeSafe=1;
+  function findBadge(){
+    var nodes=document.querySelectorAll('a,iframe,div'),i,el,st,r;
+    for(i=0;i<nodes.length;i++){
+      el=nodes[i];st=getComputedStyle(el);
+      if(st.position!=='fixed'&&st.position!=='sticky')continue;
+      if(st.display==='none'||st.visibility==='hidden'||+st.opacity===0)continue;
+      r=el.getBoundingClientRect();
+      if(r.width<60||r.height<18||r.width>320||r.height>120)continue;
+      if(r.bottom>window.innerHeight-56&&r.right>window.innerWidth-56)return {el:el,w:r.width,h:r.height};
+    }
+    return null;
+  }
+  var settled=false;
+  function clear(){
+    if(settled)return;
+    var badge=findBadge();
+    if(!badge)return;
+    settled=true;
+    var pad=Math.ceil(badge.w)+14;
+    var bars=[],all=document.querySelectorAll('body *'),i,el,st,r;
+    for(i=0;i<all.length;i++){
+      el=all[i];st=getComputedStyle(el);
+      if(st.position!=='fixed'&&st.position!=='sticky')continue;
+      if(st.display==='none'||st.visibility==='hidden')continue;
+      r=el.getBoundingClientRect();
+      if(r.height<=120&&r.width>window.innerWidth*0.5&&r.bottom>window.innerHeight-28)bars.push(el);
+    }
+    if(bars.length){
+      for(i=0;i<bars.length;i++){
+        var cur=parseFloat(getComputedStyle(bars[i]).paddingRight)||0;
+        bars[i].style.paddingRight=(cur+pad)+'px';
+        bars[i].style.boxSizing='border-box';
+      }
+    } else {
+      var body=getComputedStyle(document.body);
+      document.body.style.paddingBottom=((parseFloat(body.paddingBottom)||0)+Math.ceil(badge.h)+10)+'px';
+    }
+  }
+  ['load','resize','orientationchange'].forEach(function(event){window.addEventListener(event,clear);});
+  document.addEventListener('DOMContentLoaded',clear);
+  setTimeout(clear,700);setTimeout(clear,2200);
+  var timer;
+  var schedule=function(){clearTimeout(timer);timer=setTimeout(clear,300);};
+  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+</body>
 </html>
